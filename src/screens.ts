@@ -1,0 +1,253 @@
+import type { ImageSourcePropType } from 'react-native';
+
+export type CivicScreen = {
+  id: string;
+  title: string;
+  group: 'Welcome' | 'Citizen' | 'Engineer' | 'Officer' | 'Community' | 'Civic info' | 'Settings' | 'States';
+  source: ImageSourcePropType;
+};
+
+// These are the supplied screen compositions, bundled as image assets so their
+// original type, spacing, color, and artwork remain unchanged on-device.
+export const screens: CivicScreen[] = [
+  { id: 'design-system', title: 'CivicLens design system', group: 'Welcome', source: require('../assets/screens/main-01.png') },
+  { id: 'sign-in', title: 'Sign in', group: 'Welcome', source: require('../assets/screens/main-02.png') },
+  { id: 'choose-role', title: 'Choose your role', group: 'Welcome', source: require('../assets/screens/main-03.png') },
+  { id: 'verify-phone', title: 'Verify your phone', group: 'Welcome', source: require('../assets/screens/main-04.png') },
+  { id: 'location-permission', title: 'Location permission', group: 'Welcome', source: require('../assets/screens/main-05.png') },
+  { id: 'home', title: 'Home', group: 'Citizen', source: require('../assets/screens/main-06.png') },
+  { id: 'home-evening', title: 'Home, evening', group: 'Citizen', source: require('../assets/screens/main-07.png') },
+  { id: 'voice-home', title: 'Voice reporting', group: 'Citizen', source: require('../assets/screens/main-08.png') },
+  { id: 'officer-queue', title: 'Officer review queue', group: 'Officer', source: require('../assets/screens/main-09.png') },
+  { id: 'home-updates', title: 'Home updates', group: 'Citizen', source: require('../assets/screens/main-10.png') },
+  { id: 'voice-review', title: 'Review voice report', group: 'Citizen', source: require('../assets/screens/main-11.png') },
+  { id: 'photo-check', title: 'Photo check', group: 'Citizen', source: require('../assets/screens/main-12.png') },
+  { id: 'complaint-detail', title: 'Complaint detail', group: 'Citizen', source: require('../assets/screens/main-13.png') },
+  { id: 'audit-trail', title: 'Audit trail', group: 'Citizen', source: require('../assets/screens/main-14.png') },
+  { id: 'engineer-jobs', title: 'Engineer jobs', group: 'Engineer', source: require('../assets/screens/main-15.png') },
+  { id: 'repair-verified', title: 'Repair verified', group: 'Engineer', source: require('../assets/screens/main-16.png') },
+  { id: 'ward-feed', title: 'Ward feed', group: 'Community', source: require('../assets/screens/main-17.png') },
+  { id: 'post-detail', title: 'Post details', group: 'Community', source: require('../assets/screens/main-18.png') },
+  { id: 'create-post', title: 'Create a post', group: 'Community', source: require('../assets/screens/main-19.png') },
+  { id: 'polls', title: 'Polls', group: 'Community', source: require('../assets/screens/main-20.png') },
+  { id: 'civic-information', title: 'Civic information', group: 'Civic info', source: require('../assets/screens/main-21.png') },
+  { id: 'public-notices', title: 'Public notices', group: 'Civic info', source: require('../assets/screens/main-22.png') },
+  { id: 'department', title: 'PWD Ward 4', group: 'Civic info', source: require('../assets/screens/main-23.png') },
+  { id: 'report-category', title: 'Choose issue category', group: 'Citizen', source: require('../assets/screens/main-24.png') },
+  { id: 'report-details', title: 'Add report details', group: 'Citizen', source: require('../assets/screens/main-25.png') },
+  { id: 'map-search', title: 'Map search', group: 'Citizen', source: require('../assets/screens/main-26.png') },
+  { id: 'road-results', title: 'Road results', group: 'Citizen', source: require('../assets/screens/main-27.png') },
+  { id: 'map-filters', title: 'Map filters', group: 'Citizen', source: require('../assets/screens/main-28.png') },
+  { id: 'nearby-issues', title: 'Nearby issues', group: 'Citizen', source: require('../assets/screens/main-29.png') },
+  { id: 'saved-items', title: 'Saved items', group: 'Citizen', source: require('../assets/screens/main-30.png') },
+  { id: 'my-activity', title: 'My activity', group: 'Citizen', source: require('../assets/screens/main-31.png') },
+  { id: 'voice-recording', title: 'Voice recording', group: 'Citizen', source: require('../assets/screens/main-32.png') },
+  { id: 'voice-review-2', title: 'Voice report review', group: 'Citizen', source: require('../assets/screens/main-33.png') },
+  { id: 'take-photo', title: 'Take a photo', group: 'Citizen', source: require('../assets/screens/main-34.png') },
+  { id: 'drop-pin', title: 'Drop the pin', group: 'Citizen', source: require('../assets/screens/main-35.png') },
+  { id: 'checking-photo', title: 'Checking your photo', group: 'Citizen', source: require('../assets/screens/main-36.png') },
+  { id: 'ready-to-file', title: 'Ready to file', group: 'Citizen', source: require('../assets/screens/main-37.png') },
+  { id: 'similar-report', title: 'Similar report', group: 'Citizen', source: require('../assets/screens/main-38.png') },
+  { id: 'report-filed', title: 'Report filed', group: 'Citizen', source: require('../assets/screens/main-39.png') },
+  { id: 'my-complaints', title: 'My complaints', group: 'Citizen', source: require('../assets/screens/one-01.png') },
+  { id: 'complaint-detail-2', title: 'Complaint detail', group: 'Citizen', source: require('../assets/screens/one-02.png') },
+  { id: 'resolved', title: 'Resolved complaint', group: 'Citizen', source: require('../assets/screens/one-03.png') },
+  { id: 'not-fixed', title: 'Report a repair issue', group: 'Citizen', source: require('../assets/screens/one-04.png') },
+  { id: 'audit-trail-2', title: 'Audit trail', group: 'Citizen', source: require('../assets/screens/one-05.png') },
+  { id: 'public-lookup', title: 'Check any complaint', group: 'Citizen', source: require('../assets/screens/one-06.png') },
+  { id: 'alerts', title: 'Alerts', group: 'Citizen', source: require('../assets/screens/one-07.png') },
+  { id: 'profile-privacy', title: 'Profile and privacy', group: 'Settings', source: require('../assets/screens/one-08.png') },
+  { id: 'engineer-jobs-2', title: 'Engineer jobs', group: 'Engineer', source: require('../assets/screens/one-09.png') },
+  { id: 'repair-camera', title: 'Repair photo', group: 'Engineer', source: require('../assets/screens/one-10.png') },
+  { id: 'repair-failed', title: 'Repair not verified', group: 'Engineer', source: require('../assets/screens/one-11.png') },
+  { id: 'repair-verified-2', title: 'Repair verified', group: 'Engineer', source: require('../assets/screens/one-12.png') },
+  { id: 'officer-review', title: 'Officer review queue', group: 'Officer', source: require('../assets/screens/one-13.png') },
+  { id: 'officer-ticket', title: 'Review complaint', group: 'Officer', source: require('../assets/screens/one-14.png') },
+  { id: 'department-stats', title: 'Department statistics', group: 'Officer', source: require('../assets/screens/one-15.png') },
+  { id: 'brand-cover', title: 'CivicLens', group: 'Welcome', source: require('../assets/screens/one-16.png') },
+  { id: 'onboarding-photo', title: 'Live photo', group: 'Welcome', source: require('../assets/screens/one-17.png') },
+  { id: 'onboarding-voice', title: 'Voice reporting', group: 'Welcome', source: require('../assets/screens/one-18.png') },
+  { id: 'onboarding-audit', title: 'Verification', group: 'Welcome', source: require('../assets/screens/one-19.png') },
+  { id: 'forgot-password', title: 'Forgot password', group: 'Settings', source: require('../assets/screens/one-20.png') },
+  { id: 'reset-password', title: 'Reset password', group: 'Settings', source: require('../assets/screens/one-21.png') },
+  { id: 'settings', title: 'Settings', group: 'Settings', source: require('../assets/screens/one-22.png') },
+  { id: 'alert-settings', title: 'Alerts and SMS', group: 'Settings', source: require('../assets/screens/one-23.png') },
+  { id: 'language-settings', title: 'Language and text size', group: 'Settings', source: require('../assets/screens/two-01.png') },
+  { id: 'photo-privacy', title: 'Photo privacy', group: 'Settings', source: require('../assets/screens/two-02.png') },
+  { id: 'help', title: 'Help and support', group: 'Settings', source: require('../assets/screens/two-03.png') },
+  { id: 'faq', title: 'FAQ', group: 'Settings', source: require('../assets/screens/two-04.png') },
+  { id: 'contact-support', title: 'Contact support', group: 'Settings', source: require('../assets/screens/two-05.png') },
+  { id: 'privacy-policy', title: 'Privacy policy', group: 'Settings', source: require('../assets/screens/two-06.png') },
+  { id: 'terms', title: 'Terms and conditions', group: 'Settings', source: require('../assets/screens/two-07.png') },
+  { id: 'empty-complaints', title: 'No reports yet', group: 'States', source: require('../assets/screens/two-08.png') },
+  { id: 'empty-alerts', title: 'All caught up', group: 'States', source: require('../assets/screens/two-09.png') },
+  { id: 'offline', title: 'You are offline', group: 'States', source: require('../assets/screens/two-10.png') },
+  { id: 'error', title: 'Something went wrong', group: 'States', source: require('../assets/screens/two-11.png') },
+  { id: 'location-off', title: 'Location is off', group: 'States', source: require('../assets/screens/two-12.png') },
+  { id: 'loading-reports', title: 'Loading your reports', group: 'States', source: require('../assets/screens/two-13.png') },
+  { id: 'no-search-results', title: 'No reports found', group: 'States', source: require('../assets/screens/two-14.png') },
+  { id: 'profile-privacy-2', title: 'Profile and privacy', group: 'Settings', source: require('../assets/screens/two-15.png') },
+  { id: 'password-updated', title: 'Password updated', group: 'Settings', source: require('../assets/screens/two-16.png') },
+  { id: 'home-duplicate', title: 'Home', group: 'Citizen', source: require('../assets/screens/two-17.png') },
+];
+
+export const screenById = (id: string) => screens.find((screen) => screen.id === id);
+
+export const groupNames = [...new Set(screens.map(({ group }) => group))];
+
+export const tabDestinations = {
+  Home: 'home',
+  Map: 'map-search',
+  Reports: 'my-complaints',
+  Profile: 'profile-privacy',
+} as const;
+
+export const primaryFlow: Record<string, string> = {
+  'sign-in': 'home',
+  'choose-role': 'verify-phone',
+  'verify-phone': 'location-permission',
+  'location-permission': 'home',
+  home: 'report-category',
+  'report-category': 'report-details',
+  'report-details': 'take-photo',
+  'take-photo': 'drop-pin',
+  'drop-pin': 'checking-photo',
+  'checking-photo': 'ready-to-file',
+  'ready-to-file': 'report-filed',
+  'voice-home': 'voice-recording',
+  'voice-recording': 'voice-review',
+  'voice-review': 'report-filed',
+  'my-complaints': 'complaint-detail',
+  'complaint-detail': 'resolved',
+  'engineer-jobs': 'repair-camera',
+  'repair-camera': 'repair-verified',
+  'officer-queue': 'officer-ticket',
+  'officer-review': 'officer-ticket',
+  'forgot-password': 'reset-password',
+  'reset-password': 'password-updated',
+  settings: 'alert-settings',
+};
+
+export type Hotspot = { left: number; top: number; width: number; height: number; to: string; label: string };
+
+// Percentages are measured against the supplied 1170 x 2532 screen artwork.
+export const hotspots: Record<string, Hotspot[]> = {
+  'sign-in': [
+    { left: 7, top: 55, width: 43, height: 4, to: 'forgot-password', label: 'Forgot your password' },
+    { left: 51, top: 55, width: 42, height: 4, to: 'home', label: 'Fill demo details' },
+    { left: 29, top: 86, width: 64, height: 4, to: 'choose-role', label: 'Create an account' },
+  ],
+  'choose-role': [
+    { left: 7, top: 23, width: 86, height: 8, to: 'verify-phone', label: 'Choose citizen role' },
+    { left: 7, top: 32, width: 86, height: 8, to: 'verify-phone', label: 'Choose engineer role' },
+    { left: 7, top: 41, width: 86, height: 8, to: 'verify-phone', label: 'Choose officer role' },
+    { left: 7, top: 90, width: 86, height: 8, to: 'verify-phone', label: 'Continue' },
+  ],
+  home: [
+    { left: 7, top: 23, width: 45, height: 9, to: 'report-category', label: 'Report by photo' },
+    { left: 54, top: 23, width: 39, height: 9, to: 'voice-home', label: 'Speak a report' },
+    { left: 7, top: 35, width: 86, height: 17, to: 'nearby-issues', label: 'Nearby reports' },
+    { left: 7, top: 52, width: 86, height: 22, to: 'alerts', label: 'Today’s updates' },
+  ],
+  'home-evening': [
+    { left: 7, top: 23, width: 45, height: 9, to: 'report-category', label: 'Report by photo' },
+    { left: 54, top: 23, width: 39, height: 9, to: 'voice-home', label: 'Speak a report' },
+  ],
+  'home-updates': [
+    { left: 7, top: 23, width: 45, height: 9, to: 'report-category', label: 'Report by photo' },
+    { left: 54, top: 23, width: 39, height: 9, to: 'voice-home', label: 'Speak a report' },
+  ],
+  'civic-information': [
+    { left: 7, top: 17, width: 86, height: 13, to: 'public-notices', label: 'Public notices' },
+    { left: 7, top: 66, width: 86, height: 10, to: 'department', label: 'Public services and departments' },
+  ],
+  'public-notices': [{ left: 7, top: 16, width: 86, height: 16, to: 'department', label: 'Open notice details' }],
+  'my-complaints': [{ left: 7, top: 22, width: 86, height: 12, to: 'complaint-detail', label: 'Open MG Road complaint' }],
+  'complaint-detail': [
+    { left: 7, top: 88, width: 22, height: 8, to: 'audit-trail', label: 'Verify history' },
+    { left: 30, top: 88, width: 22, height: 8, to: 'resolved', label: 'See the repair' },
+    { left: 54, top: 88, width: 20, height: 8, to: 'ward-feed', label: 'Share complaint' },
+    { left: 76, top: 88, width: 17, height: 8, to: 'resolved', label: 'Verify repair' },
+  ],
+  'resolved': [
+    { left: 7, top: 88, width: 42, height: 8, to: 'not-fixed', label: 'Report that it is not fixed' },
+    { left: 51, top: 88, width: 42, height: 8, to: 'complaint-detail', label: 'Confirm repair' },
+  ],
+  'location-permission': [
+    { left: 7, top: 88, width: 86, height: 6, to: 'home', label: 'Allow location while using app' },
+    { left: 7, top: 95, width: 86, height: 5, to: 'drop-pin', label: 'Drop the pin myself' },
+  ],
+  'voice-home': [{ left: 7, top: 90, width: 86, height: 8, to: 'voice-recording', label: 'Speak your complaint' }],
+  'voice-recording': [{ left: 7, top: 90, width: 86, height: 8, to: 'voice-review', label: 'Done speaking' }],
+  'voice-review': [
+    { left: 7, top: 29, width: 86, height: 12, to: 'report-details', label: 'Edit voice report' },
+    { left: 7, top: 43, width: 86, height: 9, to: 'report-filed', label: 'Approve voice report' },
+  ],
+  'voice-review-2': [
+    { left: 7, top: 90, width: 43, height: 8, to: 'report-filed', label: 'Approve voice report' },
+    { left: 51, top: 90, width: 42, height: 8, to: 'report-details', label: 'Edit voice report' },
+  ],
+  'take-photo': [{ left: 7, top: 90, width: 86, height: 8, to: 'drop-pin', label: 'Take a live photo' }],
+  'drop-pin': [{ left: 7, top: 90, width: 86, height: 8, to: 'checking-photo', label: 'Confirm location' }],
+  'checking-photo': [{ left: 7, top: 90, width: 86, height: 8, to: 'ready-to-file', label: 'See result' }],
+  'ready-to-file': [
+    { left: 7, top: 82, width: 86, height: 7, to: 'similar-report', label: 'Review similar report' },
+    { left: 7, top: 91, width: 86, height: 8, to: 'report-filed', label: 'Submit report' },
+  ],
+  'similar-report': [
+    { left: 7, top: 85, width: 86, height: 7, to: 'report-filed', label: 'Same hole, add my voice' },
+    { left: 7, top: 92, width: 86, height: 7, to: 'report-filed', label: 'It is a different one' },
+  ],
+  'report-filed': [
+    { left: 7, top: 88, width: 40, height: 9, to: 'home', label: 'Home' },
+    { left: 51, top: 88, width: 42, height: 9, to: 'complaint-detail', label: 'Track report' },
+  ],
+  'engineer-jobs': [{ left: 7, top: 19, width: 86, height: 16, to: 'repair-camera', label: 'Open the critical repair job' }],
+  'engineer-jobs-2': [{ left: 7, top: 19, width: 86, height: 16, to: 'repair-camera', label: 'Open the critical repair job' }],
+  'repair-camera': [{ left: 7, top: 90, width: 86, height: 8, to: 'repair-verified', label: 'Capture repair photo' }],
+  'repair-verified': [{ left: 7, top: 90, width: 86, height: 8, to: 'engineer-jobs', label: 'Next job' }],
+  'officer-queue': [{ left: 7, top: 20, width: 86, height: 15, to: 'officer-ticket', label: 'Review MG Road report' }],
+  'officer-review': [{ left: 7, top: 20, width: 86, height: 15, to: 'officer-ticket', label: 'Review MG Road report' }],
+  'officer-ticket': [
+    { left: 7, top: 89, width: 40, height: 9, to: 'officer-queue', label: 'Reject report' },
+    { left: 51, top: 89, width: 42, height: 9, to: 'engineer-jobs', label: 'Approve and assign' },
+  ],
+  'ward-feed': [
+    { left: 7, top: 16, width: 86, height: 22, to: 'post-detail', label: 'Open neighborhood post' },
+    { left: 7, top: 90, width: 86, height: 8, to: 'create-post', label: 'Create a post' },
+  ],
+  'post-detail': [{ left: 7, top: 91, width: 86, height: 7, to: 'ward-feed', label: 'Send comment' }],
+  'create-post': [{ left: 7, top: 91, width: 86, height: 8, to: 'ward-feed', label: 'Post to Ward 4' }],
+  'settings': [
+    { left: 7, top: 12, width: 86, height: 12, to: 'alert-settings', label: 'Alerts and SMS' },
+    { left: 7, top: 25, width: 86, height: 12, to: 'language-settings', label: 'Language and text size' },
+    { left: 7, top: 38, width: 86, height: 12, to: 'photo-privacy', label: 'Photo privacy' },
+    { left: 7, top: 51, width: 86, height: 12, to: 'help', label: 'Help and support' },
+    { left: 7, top: 64, width: 86, height: 12, to: 'terms', label: 'Terms and privacy' },
+  ],
+  'profile-privacy': [
+    { left: 7, top: 26, width: 86, height: 8, to: 'alert-settings', label: 'Alerts and SMS' },
+    { left: 7, top: 35, width: 86, height: 8, to: 'voice-home', label: 'Jan-Vaani voice reports' },
+    { left: 7, top: 43, width: 86, height: 8, to: 'photo-privacy', label: 'Photo privacy' },
+    { left: 7, top: 61, width: 86, height: 8, to: 'language-settings', label: 'Language and text size' },
+    { left: 7, top: 70, width: 86, height: 8, to: 'alert-settings', label: 'Quiet hours' },
+  ],
+  'profile-privacy-2': [
+    { left: 7, top: 26, width: 86, height: 8, to: 'alert-settings', label: 'Alerts and SMS' },
+    { left: 7, top: 35, width: 86, height: 8, to: 'voice-home', label: 'Jan-Vaani voice reports' },
+    { left: 7, top: 43, width: 86, height: 8, to: 'photo-privacy', label: 'Photo privacy' },
+    { left: 7, top: 61, width: 86, height: 8, to: 'language-settings', label: 'Language and text size' },
+  ],
+  'alert-settings': [{ left: 7, top: 90, width: 86, height: 8, to: 'settings', label: 'Save alert settings' }],
+  'language-settings': [{ left: 7, top: 90, width: 86, height: 8, to: 'profile-privacy', label: 'Save language and text size' }],
+  'photo-privacy': [{ left: 7, top: 90, width: 86, height: 8, to: 'profile-privacy', label: 'Save photo privacy settings' }],
+  'help': [
+    { left: 7, top: 36, width: 86, height: 12, to: 'faq', label: 'Read FAQ' },
+    { left: 7, top: 85, width: 86, height: 10, to: 'contact-support', label: 'Contact support' },
+  ],
+  faq: [{ left: 7, top: 89, width: 86, height: 8, to: 'help', label: 'Back to help' }],
+  'contact-support': [{ left: 7, top: 90, width: 86, height: 8, to: 'alerts', label: 'Send message' }],
+  'forgot-password': [{ left: 7, top: 90, width: 86, height: 8, to: 'reset-password', label: 'Send reset code' }],
+  'reset-password': [{ left: 7, top: 90, width: 86, height: 8, to: 'password-updated', label: 'Update password' }],
+  'password-updated': [{ left: 7, top: 90, width: 86, height: 8, to: 'sign-in', label: 'Back to sign in' }],
+};

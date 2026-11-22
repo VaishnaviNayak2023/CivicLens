@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "CivicLens",
+    "slug": "civiclens-mobile",
+    "platforms": ["ios", "android", "web"],
+    "scheme": "civiclens",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      ["expo-camera", { "cameraPermission": "CivicLens uses the camera for live civic reports." }],
+      ["expo-location", { "locationWhenInUsePermission": "CivicLens uses your location while you report an issue." }],
+      ["expo-image-picker", { "photosPermission": "CivicLens uses photos when attaching optional evidence." }],
+      "expo-notifications"
+    ],
+    "ios": { "supportsTablet": false, "bundleIdentifier": "org.civiclens.mobile" },
+    "android": { "package": "org.civiclens.mobile", "adaptiveIcon": { "backgroundColor": "#F1EFE8" } },
+    "experiments": { "typedRoutes": true }
+  }
+}
